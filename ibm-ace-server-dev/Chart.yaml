@@ -1,0 +1,21 @@
+appVersion: 11.0.0.5
+description: This helm chart is used by the IBM App Connect Dashboard to deploy servers
+icon: https://raw.githubusercontent.com/ot4i/ace-helm/master/integration_server.svg?sanitize=true
+keywords:
+- Limited
+- amd64
+- ICP
+- ICPRHOCP
+- ACE
+- Integration
+- IIB
+- WMB
+- MQSI
+- Websphere
+- Message
+- Broker
+- Bus
+kubeVersion: '>=1.11.0'
+name: ibm-ace-server-dev
+tillerVersion: '>=2.9.1'
+version: 2.0.0
