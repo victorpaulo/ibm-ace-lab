@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: my-ace-dev-v2
+  labels:
+    app: my-ace-dev-v2
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: my-ace-app.com
+    http:
+      paths:
+      - backend:
+          serviceName: my-ace-dev-v2-ibm-ace-server-dev
+          servicePort: 7800
