@@ -1,5 +1,6 @@
 FROM ibmcom/ace:11.0.0.5-amd64
 ENV BAR1=API.bar 
+ENV LICENSE=accept
 ENV OVERRIDE_FILE=override.properties
 # Copy the override properties file to ace-server overrides directory
 COPY --chown=aceuser $OVERRIDE_FILE /home/aceuser/ace-server/overrides 
